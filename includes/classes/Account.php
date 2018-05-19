@@ -1,8 +1,10 @@
 <?php
   class Account {
 
-    public function __construct() {
+    private $errorArray;
 
+    public function __construct() {
+      $this->errorArray = array();
     }
 
     public function register($un, $fn, $ln, $em, $em2, $pw,
@@ -15,6 +17,13 @@
     }
 
     private function validateUsername($un) {
+
+      if(strlen($un) > 25 || strlen($un) < 5) {
+        array_push($this->errorArray, "Your username must be between 5 and 25 characters");
+        return;
+      }
+
+      // TODO: check if username exists
 
     }
 
