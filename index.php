@@ -63,6 +63,14 @@ else {
 
           </div>
 
+          <div class="playbackBar">
+
+            <span class="progressTime current">0.0</span>
+            <div class="progressBar"></div>
+            <span class="progressTime remaining">0.0</span>
+
+          </div>
+
         </div>
 
       </div>
