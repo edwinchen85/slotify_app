@@ -31,6 +31,7 @@
       <h2>Login to your account</h2>
 
       <p>
+        <?php echo $account->getError(Constants::$loginFailed); ?>
         <label for="loginUsername">Username</label>
         <input id="loginUsername" name="loginUsername"  type="text" placeholder="e.g bartSimpson" required>
       </p>
@@ -62,6 +63,7 @@
       </p>
 
       <p>
+        <?php echo $account->getError(Constants::$lastNameCharacters); ?>
         <?php echo $account->getError(Constants::$lastNameCharacters); ?>
         <label for="lastName">Last Name</label>
         <input id="lastName" name="lastName"  type="text" placeholder="e.g Simpson" value="<?php getInputValue('lastName'); ?>" required>
