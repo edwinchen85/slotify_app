@@ -111,3 +111,8 @@ body {
 .hasAccountText span:hover {
   cursor: pointer;
 }
+
+#registerForm,
+#loginForm {
+  display: none;
+}
