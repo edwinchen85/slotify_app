@@ -32,6 +32,15 @@ else {
           <span class="albumLink">
             <img src="https://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" class="albumArtwork">
           </span>
+
+          <div class="trackInfo">
+            <span class="trackName">
+              <span>Happy Birthday</span>
+            </span>
+            <span class="artistName">
+              <span>Molly Mars</span>
+            </span>
+          </div>
         </div>
       </div>
 
