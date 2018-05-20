@@ -144,3 +144,9 @@ body {
   padding: 3px 30px;
   background: url('../images/icons/checkmark.png') no-repeat;
 }
+
+#inputContainer .errorMessage {
+  color: #07d159;
+  font-size: 12px;
+  display: block;
+}
