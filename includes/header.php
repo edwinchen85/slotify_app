@@ -25,11 +25,6 @@ else {
   <title>Welcome to Slotify</title>
 
   <script src="assets/js/script.js"></script>
-  <script>
-    var audioElement = new Audio();
-    audioElement.setTrack("assets/music/bensound-acousticbreeze.mp3");
-    audioElement.audio.play();
-  </script>
 </head>
 <body>
 
