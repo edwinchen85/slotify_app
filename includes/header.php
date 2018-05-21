@@ -24,6 +24,7 @@ else {
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Welcome to Slotify</title>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/js/script.js"></script>
 </head>
 <body>
