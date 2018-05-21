@@ -23,6 +23,13 @@ else {
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Welcome to Slotify</title>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    var audioElement = new Audio();
+    audioElement.setTrack("assets/music/bensound-acousticbreeze.mp3");
+    audioElement.audio.play();
+  </script>
 </head>
 <body>
 
