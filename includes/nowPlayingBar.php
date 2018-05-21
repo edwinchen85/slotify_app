@@ -21,7 +21,12 @@ $jsonArray = json_encode($resultArray);
   });
 
   function setTrack(trackId, newPlaylist, play) {
-    audioElement.setTrack("assets/music/bensound-clearday.mp3");
+    $.post("includes/handlers/ajax/getSongJson.php", { songId: trackId }, function(data) {
+      var track = JSON.parse(data);
+
+      audioElement.setTrack(track.path);
+      audioElement.play();
+    });
 
     if(play) {
       audioElement.play();
