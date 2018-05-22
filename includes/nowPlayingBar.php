@@ -73,6 +73,12 @@ $jsonArray = json_encode($resultArray);
   }
 
   function nextSong() {
+    if(repeat) {
+      audioElement.setTime(0);
+      playSong();
+      return;
+    }
+
     if(currentIndex == currentPlaylist.length - 1) {
       currentIndex = 0;
     }
@@ -85,9 +91,12 @@ $jsonArray = json_encode($resultArray);
   }
 
   function setTrack(trackId, newPlaylist, play) {
+
+    var currentIndex = currentPlaylist.indexOf(trackId);
+    pauseSong();
+
     $.post("includes/handlers/ajax/getSongJson.php", { songId: trackId }, function(data) {
 
-      var currentIndex = currentPlaylist.indexOf(trackId);
       var track = JSON.parse(data);
 
       $(".trackName span").text(track.title);
